@@ -9,12 +9,12 @@ const jwt = require('jsonwebtoken')
 const router = express.Router()
 
 
-router.post('api/register', registerController);
-router.post('api/login', loginController )
+router.post('/register', registerController);
+router.post('/login', loginController )
 
 
 
-router.get('api/user', (req, res) => {
+router.get('/user', (req, res) => {
   res.send("User route");
 });
 
